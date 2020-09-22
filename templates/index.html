@@ -1,0 +1,137 @@
+<html>
+<head>
+<div style="margin-top:100px;padding:15px 15px 300px;font-size:30px">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<style>
+
+.btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
+.btn-large { padding: 9px 14px; font-size: 15px; line-height: normal; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.btn:hover { color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear; }
+.btn-primary, .btn-primary:hover { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; }
+.btn-primary.active { color: rgba(255, 255, 255, 0.75); }
+.btn-primary { background-color: #4a77d4; background-image: -moz-linear-gradient(top, #6eb6de, #4a77d4); background-image: -ms-linear-gradient(top, #6eb6de, #4a77d4); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb6de), to(#4a77d4)); background-image: -webkit-linear-gradient(top, #6eb6de, #4a77d4); background-image: -o-linear-gradient(top, #6eb6de, #4a77d4); background-image: linear-gradient(top, #6eb6de, #4a77d4); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6eb6de, endColorstr=#4a77d4, GradientType=0);  border: 1px solid #3762bc; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #4a77d4; }
+.btn-block { width: 60%; display:block; }
+</style>
+
+												<!--navbar portion-->
+  <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+  <a class="navbar-brand" href="#"><b>Forest Cover Classification</b></a>
+  <a class="navbar-brand" href="#"><b><font size="2">BY DHEERAJ KUMAR</font></b></a>
+  <ul class="navbar-nav" >
+    <li class="nav-item">
+    </li>
+    <li class="nav-item">
+    </li>
+  </ul>
+</nav>
+
+
+<style>
+body {
+    font-family: sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1523293836414-f04e712e1f3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+</style>
+
+<style>
+
+#ip4 {
+    border-radius: 15px 50px 30px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 450px;
+    height: 15px; 
+}
+</style>
+<style>
+.section-heading,.small-heading {
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	background: #ccc;
+	color: #000;
+  
+}
+.section-heading::before, .small-heading::before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	bottom: 5px;
+	left: 5px;
+	z-index: 0;
+	border: 1px solid rgba(255,255,255,0.6);
+	//box-shadow: inset 0px 0px 30px rgba(255,255,255,0.6);
+}
+.small-heading{
+  display: inline-block;
+}
+.wrapper {
+  text-align: center;
+  
+}
+
+</style>
+<body>
+
+<div  class="login"> 
+<!--<font size="8" color ="white"><b>Forest Cover Classification</b></font></div>-->
+<div class="wrapper">
+  <h2 class="small-heading"><b>Forest Cover Classification</b></H2></div>
+<br><br>
+     <!-- Main Input For Receiving Query to our ML -->
+   <center> <form action="{{ url_for('predict')}}"method="post">
+    	        
+                <input type="text" name="Elevation" placeholder="Elevation" required="required" id="ip4" /><br>              
+		<input type="text" name="Horizontal_Distance_To_Roadways" placeholder="Horizontal_Distance_To_Roadways" required="required" id="ip4" /><br>
+		<input type="text" name="soil_type" placeholder="soil_type" required="required" id="ip4" /><br>
+                <input type="text" name="Road_fire" placeholder="Road_fire" required="required" id="ip4" /><br>
+                <input type="text" name="EL_DIS" placeholder="MEL_DIS" required="required" id="ip4" /><br>
+                <input type="text" name="EL_Fire" placeholder="EL_Fire" required="required" id="ip4" /><br>
+                <input type="text" name="EL_Road" placeholder="EL_Road" required="required" id="ip4" /><br>
+		
+           
+<br>  
+<center><input type="submit" class="btn-primary btn-lg"value="Predict"></center>
+    </form></center>
+
+   <br>
+
+ <center> <font color="white" size="8"> <b>{{ prediction_text }} </b></font></center>
+ 
+</div>
+
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("header").style.fontSize = "10px";
+  } else {
+    document.getElementById("header").style.fontSize = "10px";
+  }
+}
+</script>
+
+</body>
+</html>
+
