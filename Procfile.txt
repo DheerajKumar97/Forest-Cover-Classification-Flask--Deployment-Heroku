@@ -1,1 +1,1 @@
-web: gunicorn app:Customer-Life-Time-Value-Prediction-api
+web: gunicorn app:Forest-Cover-Classification-api
