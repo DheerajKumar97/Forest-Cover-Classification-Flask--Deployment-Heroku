@@ -89,6 +89,35 @@ body {
 }
 
 </style>
+<style>
+.section-heading,.small-heading1 {
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	background: lightblue;
+	color: #000;
+  
+}
+.section-heading::before, .small-heading1::before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	bottom: 5px;
+	left: 5px;
+	z-index: 0;
+	border: 1px solid rgba(255,255,255,0.6);
+	//box-shadow: inset 0px 0px 30px rgba(255,255,255,0.6);
+}
+.small-heading1{
+  display: inline-block;
+}
+.dhwrapper {
+  text-align: center;
+  
+}
+
+</style>
 <body>
 
 <div  class="login"> 
@@ -113,8 +142,8 @@ body {
     </form></center>
 
    <br>
-
- <center> <font color="white" size="8"> <b>{{ prediction_text }} </b></font></center>
+<div class="dhwrapper">
+     <font color="white" size="8"> <h2 class="small-heading1"><b>{{ prediction_text }} </b><h2></font></div>
  
 </div>
 
