@@ -40,7 +40,7 @@
     </li>
   </ul>
 </nav>
-
+<br><br>
 
 <style>
 body {
@@ -124,7 +124,7 @@ body {
 <!--<font size="8" color ="white"><b>Forest Cover Classification</b></font></div>-->
 <div class="wrapper">
   <h2 class="small-heading"><b>Forest Cover Classification</b></H2></div>
-<br><br>
+<br>
      <!-- Main Input For Receiving Query to our ML -->
    <center> <form action="{{ url_for('predict')}}"method="post">
     	        
@@ -137,11 +137,10 @@ body {
                 <input type="text" name="EL_Road" placeholder="EL_Road" required="required" id="ip4" /><br>
 		
            
-<br>  
+<br><br>  
 <center><input type="submit" class="btn-primary btn-lg"value="Predict"></center>
     </form></center>
-
-   <br>
+<br><br><br>
 <div class="dhwrapper">
      <font color="white" size="8"> <h2 class="small-heading1"><b>{{ prediction_text }} </b><h2></font></div>
  
@@ -153,7 +152,7 @@ body {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     document.getElementById("header").style.fontSize = "10px";
   } else {
     document.getElementById("header").style.fontSize = "10px";
