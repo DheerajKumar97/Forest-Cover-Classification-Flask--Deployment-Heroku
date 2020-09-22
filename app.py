@@ -1,9 +1,11 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
+import joblib
 
 app = Flask(__name__)
 RF_Selector = pickle.load(open('RF_Model.pkl', 'rb'))
+RF_Selector = joblib.load('RF_Model.pkl')
 
 @app.route('/')
 def home():
