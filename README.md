@@ -1,4 +1,4 @@
-![Alt Text](https://github.com/DheerajKumar97/Forest-Cover-Classification-Flask--Deployment-Heroku/blob/master/templates/cov.jpg)
+![Alt Text](https://github.com/DheerajKumar97/Forest-Cover-Classification-Flask--Deployment-Heroku/blob/master/templates/cov2f.jpg)
 
 #  FOREST COVER CLASSIFICATION
 <br>
